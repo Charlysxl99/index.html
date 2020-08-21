@@ -289,112 +289,7 @@
     meses
     meses
     meses -->
- <section>
-  
-    <div class="table-wrapper">
-      <table id="meses">
-        <tbody class="head">
-          <tr>
-            <th class="no"></th>
-            <th class="desc">
-              <div>Conceptos</div>
-            </th>
-            <th class="total meses">
-              <div>12 meses</div>
-            </th>
-            <th class="total meses">
-              <div>24 meses</div>
-            </th>
-            <th class="total meses">
-              <div>36 meses</div>
-            </th>
-            <th class="total meses">
-              <div>48 meses</div>
-            </th>
-            <th class="total meses">
-              <div>60 meses</div>
-            </th>
-          </tr>
-        </tbody>
-        <tbody class="body">
-          <tr>
-            <td class="no">-</td> <!-- columna cero -->
-            <td class="desc">
-              <!-- descripcion -->
-              <div>
-                <p>Plazo</p>
-              </div>
-              <br>
-            </td>
-    
-            <td class="total">$1,200.00</td>
-            <td class="total">$1,200.00</td>
-            <td class="total">$1,200.00</td>
-            <td class="total">$1,200.00</td>
-    
-          </tr>
-          <tr>
-            <!-- row dos -->
-            <td class="no">-</td>
-            <td class="desc">Anticipo</td>
-    
-            <td class="total">$3,200.00</td>
-          </tr><!-- row dos -->
-          <tr>
-            <!-- row tres -->
-            <td class="no">-</td>
-            <td class="desc">Deposito en Garantia</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row tres end -->
-          <tr>
-            <!-- row tres -->
-            <td class="no">-</td>
-            <td class="desc">data-no-retina</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 4 end -->
-          <tr>
-            <!-- row 5 -->
-            <td class="no">-</td>
-            <td class="desc">Seguro</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 5 end -->
-          <tr>
-            <!-- row 6 -->
-            <td class="no">-</td>
-            <td class="desc">Mtto.Preventivo</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 6 end -->
-          <tr>
-            <!-- row 7 -->
-            <td class="no">-</td>
-            <td class="desc">Garantia Extendida</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 7 end -->
-          <tr>
-            <!-- row tres -->
-            <td class="no">-</td>
-            <td class="desc">Comision</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 8 end -->
-          <tr>
-            <!-- row 9 -->
-            <td class="no">-</td>
-            <td class="desc">Valor residual</td>
-    
-            <td class="total">$800.00</td>
-          </tr><!-- row 9 end -->
-        </tbody>
-      </table>
-    </div>
-  
-  </section>
-
+ 
     <!--     meses end -->
     <!--     no borrar este section -->
   </section>
@@ -416,32 +311,7 @@
 <section>
  <div class="container">
       <div class="no-break">
-        <table class="grand-total">
-          <tbody>
-            <tr>
-              <td class="no"></td>
-              <td class="desc"></td>
 
-              <td class="unit">SUBTOTAL:</td>
-              <td class="total">$5,200.00</td>
-            </tr>
-            <tr>
-              <td class="no"></td>
-              <td class="desc"></td>
-
-              <!--  <td class="unit">AX 25%:</td>
-              <td class="total">$1,300.00</td> -->
-            </tr>
-            <tr>
-              <td class="grand-total" colspan="5">
-                <div 
-                style="background-color:#25c16eab;
-                padding:10px;
-                " ><span>GRAND TOTAL:  </span>$6,500.00</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
     </div>
 </section>

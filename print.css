@@ -72,3 +72,16 @@
       background-color: var(--maincolor);
       color: white;
     }
+    footer .container{
+      height: 3cm;
+    }
+    .norice{
+      margin-top: 10px;
+      font-size: 2em;
+      font-weight: lighter;
+    }
+    .end{
+      font-size: 3em;
+      font-weight: lighter;
+  
+    }
