@@ -327,7 +327,13 @@
       <p>Footer</p>
     </div>
     <div class="item footer">
-      soy el footer
+     <p>
+       Responsable de la UNE: Lic. José Armando Nava Dueñez - contacto@udcs.mx
+       </p>
+       <br>
+        <p>
+          Políticas de privacidad | Unión de Crédito Saltillo © 2020
+       </p>
     </div>
     <!--     termina footer -->
     <!-- contenedor todo -->

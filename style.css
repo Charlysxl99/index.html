@@ -8,7 +8,7 @@
   --border_datos: rgba(31, 30, 30, 0.274) 5px solid;
   --bgsen_color:#111111;
   --negro_color:#111111;
-  --main_color:rgb(160, 196, 184);
+  --main_color: rgb(65 176 109);
   --blanco_color:white;
   --oscuro_color:rgb(49, 47, 47);
 }
@@ -67,9 +67,12 @@ nav li{
   display: auto;
   
 }
-button{
-  border: 1px blue solid;
+
+.btn-primary{
+  background-color: var(--main_color);
+  border: var(--main_color);
 }
+
 
 body{ 
   background-color: var(--oscuro_color)
@@ -84,9 +87,12 @@ form .wrapper{
   width: 100%;
   flex-direction: column;
   text-align: center;
-  
-  
-}
+  }
+
+  .form-control{
+    background-color: var(--oscuro_color);
+    border: none;
+  }
 label{  /* titulo */
   
   border: transparent;
@@ -119,13 +125,6 @@ input{  /* carjita */
   }
 
 
-
-/* .pn{
-  
-  
-
-} */
-
 .ot{
   align-items: center;
   
@@ -134,11 +133,14 @@ input{  /* carjita */
 
 .logo-conteiner{
 
-  display: flex;
+align-items: center;
+    object-fit: scale-down;
+    display: flex;
+    margin: auto;
 }
 .logo-conteiner img{
   object-fit: scale-down;
-  height: 100px;
+height: 150px;
 }
 
 .item{ 
@@ -226,7 +228,7 @@ datos start */
   height: 150px;
   background-color: var(--negro_color);
   grid-template:
-   repeat(1,3rem)/ repeat(2,40%)
+   repeat(1,8rem)/ repeat(2,20em)
    ;
   justify-content: space-evenly;
   gap: 10px;
@@ -349,9 +351,10 @@ datos end */
   grid-column:1/2 ;
 }
 .footer{
+  display: flex;
   height: 200px;
   background-color: var(--bgsen_color);
- 
+  align-items: center;
+  justify-content: center;
 }
-/* 
-menu */
+
