@@ -1,0 +1,74 @@
+ :root {
+   --maincolor:rgb(37, 193, 111);
+   --textcolor:black;
+}
+*{
+  font-size: 12px;
+  margin: 0;
+}
+
+ ol,
+    ul {
+      list-style: none;
+    }
+
+      table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    .line {
+      display: inline-block;
+      height: 9px;
+     padding: 10px;
+    }
+     body .text-one{
+      margin-left: .5cm;
+      margin-right: .5cm;
+     } 
+     body a {
+      text-decoration: none;
+      color: inherit;
+    }
+    body .left {
+      float: left;
+      margin-top:.5cm;
+      margin-left: .5cm;
+    }
+
+    body .right {
+      float: right;
+      margin-top:.5cm;
+      margin-right: .5cm;
+     
+    }
+  body .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .uno{
+      clear: both;
+    }
+    
+    .dos{
+      clear: both;
+    }
+    
+    .grand-total{
+      clear: both;
+      background-color: var(--maincolor);
+      
+    }
+
+    table.grand-total{
+      float: right;
+      margin-top: .5cm;
+      margin-right: .5cm;
+      text-align: right;
+      width: 6cm;
+
+    }
+    .head{
+      background-color: var(--maincolor);
+      color: white;
+    }
