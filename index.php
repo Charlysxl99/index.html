@@ -330,10 +330,12 @@
      <p>
        Responsable de la UNE: Lic. José Armando Nava Dueñez - contacto@udcs.mx
        </p>
-       <br>
+      <div>
+
         <p>
           Políticas de privacidad | Unión de Crédito Saltillo © 2020
        </p>
+      </div>
     </div>
     <!--     termina footer -->
     <!-- contenedor todo -->

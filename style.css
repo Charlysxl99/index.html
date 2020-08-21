@@ -89,6 +89,10 @@ form .wrapper{
   text-align: center;
   }
 
+  .form_conteiner {
+    width: 30%;
+    margin: 10px;
+}
   .form-control{
     background-color: var(--oscuro_color);
     border: none;
@@ -176,12 +180,12 @@ grid-area: footer;
 .spacio{
   color: var(--blanco_color);
   width: 100vw;
-  height: 20px;
+  height: 35px;
   background-color: var(--oscuro_color);
   text-align: center;
+
 }
-/* 
-datos start */
+
 
 .conteiner_datos-uno{
   display: grid;
@@ -350,6 +354,12 @@ datos end */
   grid-row: 1;
   grid-column:1/2 ;
 }
+
+
+.spacio p{
+  margin: 10px auto;
+}
+
 .footer{
   display: flex;
   height: 200px;
