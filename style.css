@@ -79,15 +79,7 @@ font{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
-form{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 5px;
-  display: flex;
- 
 
-}
 form .wrapper{
   width: 100%;
   flex-direction: column;
