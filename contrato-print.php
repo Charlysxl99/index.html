@@ -80,11 +80,11 @@ function getContrato(){
                 <tr>
                  
                   <th class="desc">
-                    <div>>//<</div>
+                    <div> Cordialmente </div>
                   </th>
 
                      <th class="desc">
-                      <div>>//<</div>
+                      <div>Propuesta aceptada por:</div>
                     </th>
 
                 </tr>
@@ -95,7 +95,7 @@ function getContrato(){
                 
                   <td class="desc">
                     <div>
-                      <p>Cordialmente</p>
+                      <br>
                     </div>
                     <br>
                     <div> 
@@ -105,7 +105,7 @@ function getContrato(){
 
                    <td class="desc">
                     <div>
-                      <p>Propuesta aceptada por:</p>
+                      <p><br></p>
                     </div>
                     <br>
                     <div> 

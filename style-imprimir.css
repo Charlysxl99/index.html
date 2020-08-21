@@ -317,11 +317,12 @@
     }
     section #meses{
       border-spacing: .5px 5px;
-      width:550px;
+      width:700px;
+      height: 300px;
       margin: 0 auto;
       page-break-inside: avoid;
       border-collapse: separate;
-      border-spacing:5px 0px;
+      border-spacing:10px 5px;
     }
 
     section #meses .meses{
@@ -344,14 +345,16 @@
     section table tbody.head {
       vertical-align: middle;
       border-color: 15px;
+      height: 1cm;
     }
 
     section table tbody.head th {
       text-align: center;
       color: rgb(255, 255, 255);
-      font-weight: 550;
+      font-weight: 650;
       text-transform: uppercase;
       background-color:#25c16eab;
+      height: 1.1cm;
     }
 
     section table tbody.head th div {
