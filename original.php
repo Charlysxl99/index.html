@@ -14,25 +14,30 @@ https://www.youtube.com/watch?v=MnIps8Yc8CY&t=163s
 
 <body>
   <div class="container mt-5">
+
     <form action="makepdf.php" method="POST" class="offset-md-3 col-md-6">
-      <h1>create pdf</h1>
-      <p>fill out the details</p>
+        <h1>create pdf</h1>
+        <p>fill out the details</p>
       <div class="row mb-2">
-        <div class="col-md-6">
-          <input type="text" name="fname" placeholder="First Name" class="form-control" required>
-        </div>
-        <div class="col-md-6">
-          <input type="text" name="lname" placeholder="Surname" class="form-control" required>
-        </div>
+          <div class="col-md-6">
+              <input type="text" name="fname" placeholder="First Name" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+              <input type="text" name="lname" placeholder="Surname" class="form-control" required>
+          </div>
       </div>
-
+      <div class="mb-2">
       <input type="email" name="email" placeholder="Email" class="form-control" required>
-
-      <input type="tel" name="phone" placeholder="Phone" class="form-control" required>
-
-      <textarea name="message" placeholder="your message"></textarea>
-
-      <button type="submit" class="btn btn-succes btn-lg btn-block">Create PDF</button>
+      </div>
+      <div class="mb-2">
+        <input type="tel" name="phone" placeholder="Phone" class="form-control" required>
+      </div>
+      <div class="mb-2">
+        <textarea name="message" placeholder="your message"></textarea>
+      </div>
+      <div class="mb-2">
+        <button type="submit" class="btn btn-success btn-lg btn-block">Create PDF</button>
+      </div>
     </form>
 
   </div>
