@@ -311,7 +311,23 @@
 <section>
  <div class="container">
       <div class="no-break">
+        <p>
 
+          El pago inicial no incluye impuestos locales como tenencia, costo de placas seguro, y gastos de gestoria.
+        </p>
+        <p>
+          
+          Recuerde que en automóviles utilitarios, el límite de deducibilidad mensual establecido por la Ley de Impuesto Sobre la
+          Renta es de $6,000.00 mensuales (sin incluir IVA ni gastos de arrendamiento). Este límite no aplica para vehículos de trabajo
+          tales como pickups y camiones de carga ligera.
+          Cualquier cambio respecto a las condiciones establecidas dentro de la aprobación de crédito correspondiente invalida la
+          presente propuesta, misma que únicamente será posible ejercer durante su vigencia.
+          Para formalizar la presente operación será necesario: 1) Realizar el pago inicial 2) Firmar el contrato de arrendamiento
+          correspondiente.
+          Union De Credito Saltillo nos esforzamos por otorgarle un buen servicio, si tiene cualquier duda o comentario respecto a la
+          presente propuesta, no dude en contactarnos, ya sea a través del ejecutivo asignado o directamente a nuestras oficinas
+          4168057
+          </p>
       </div>
     </div>
 </section>

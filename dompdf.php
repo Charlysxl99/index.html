@@ -9,7 +9,6 @@ require_once('contrato-print.php');
 //Grabs variables
 
 /* $plantilla = getPlantilla(); */
-$contrato = getContrato();
 $css = file_get_contents('style-imprimir.css');
 $html = file_get_contents('base.php');
 $header = file_get_contents('header-print.html');
@@ -27,11 +26,10 @@ $mpdf = new \Mpdf\Mpdf(
     "margin_footer" => "0"
   ]
 );
-/* $mode, $format, $font_size, $font, $margin_left, $margin_right, $margin_top, $margin_bottom, $margin_header, $margin_footer, $orientation */
-/* $mpdf->SetHeader( $header ); */
-$mpdf->SetFooter( $footer, $side = 'right', $margin_bottom);
-$mpdf->WriteHTML($html);
-$mpdf->AddPageByArray($contrato,[ "margin_top" =>"50px"]);
+
+$mpdf->SetFooter( $footer, $side = 'right');
+$mpdf->WriteHTML($html);/* 
+$mpdf->AddPageByArray($contrato,[ "margin_top" =>"50px"]); */
 
 /*   "format" => "A4",
   "mgl" => "0",
@@ -42,8 +40,6 @@ $mpdf->AddPageByArray($contrato,[ "margin_top" =>"50px"]);
   "mgf" => "0",
 ]
 )); */
-$mpdf->WriteHTML($contrato);
-
 //output browser
 $mpdf->Output('myfile.pdf','I' );
 
