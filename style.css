@@ -192,7 +192,8 @@ grid-area: footer;
   width: 100vw;
   background-color: var(--bgsen_color);
   grid-template:
-   repeat(1,5rem)/ repeat(3,200px)
+   repeat(1,5rem)/ repeat(4,200px)
+   
    ;
   justify-content: center;
   gap: 25px;
@@ -204,7 +205,7 @@ grid-area: footer;
   width: 100vw;
   background-color: var(--negro_color);
   grid-template:
-   repeat(9,5rem)/ repeat(3,300px)
+   repeat(5,5rem)/ repeat(3,200px)
    ;
   justify-content: center;
   gap: 10px 30px;
@@ -215,8 +216,8 @@ grid-area: footer;
 
   height: 100%;
   width: 100%;
-  grid-column-start: 3;
-  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-row-end: 1;
 }
 .conteiner_datos-dos>.total{
  
