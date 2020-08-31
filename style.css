@@ -180,10 +180,14 @@ grid-area: footer;
 .spacio{
   color: var(--blanco_color);
   width: 100vw;
-  height: 35px;
   background-color: var(--oscuro_color);
   text-align: center;
 
+}
+
+
+.spacio p{
+  margin: 10px auto;
 }
 
 
@@ -193,7 +197,7 @@ grid-area: footer;
   background-color: var(--bgsen_color);
   grid-template:
    repeat(1,5rem)/ repeat(4,200px)
-   
+
    ;
   justify-content: center;
   gap: 25px;
@@ -205,7 +209,7 @@ grid-area: footer;
   width: 100vw;
   background-color: var(--negro_color);
   grid-template:
-   repeat(5,5rem)/ repeat(3,200px)
+   repeat(5,5rem)/ repeat(4,200px)
    ;
   justify-content: center;
   gap: 10px 30px;
@@ -223,14 +227,14 @@ grid-area: footer;
  
   height: 100%;
   width: 100%;
-  grid-column: 1/4;
-  grid-row-end: 10;
+  grid-column: 3/5;
+  grid-row-end: 6;
 }
 
 .conteiner_datos-tres{
   display: grid;
   width: 100vw;
-  height: 150px;
+  height: 100%;
   background-color: var(--negro_color);
   grid-template:
    repeat(1,8rem)/ repeat(2,20em)
@@ -238,9 +242,21 @@ grid-area: footer;
   justify-content: space-evenly;
   gap: 10px;
   padding: 15px 0 30px 0;
- 
-}
+    grid-template-areas: 
+    " guardar imprimir ";}
+   
 
+div.conteiner_datos-tres.button div{
+   
+  align-self: center;
+  justify-self: center;
+  }
+#guardar{
+  grid-area: guardar;
+}
+#imprimir{
+  grid-area: imprimir;
+}
 .conteiner_datos-cuatro{
   color: white;
   display: grid;
@@ -357,13 +373,10 @@ datos end */
 }
 
 
-.spacio p{
-  margin: 10px auto;
-}
 
 .footer{
   display: flex;
-  height: 200px;
+  height: 90px;
   background-color: var(--bgsen_color);
   align-items: center;
   justify-content: center;
