@@ -209,7 +209,7 @@ grid-area: footer;
   width: 100vw;
   background-color: var(--negro_color);
   grid-template:
-   repeat(5,5rem)/ repeat(4,200px)
+   repeat(4,5rem)/ repeat(4,200px)
    ;
   justify-content: center;
   gap: 10px 30px;
