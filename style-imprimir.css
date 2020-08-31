@@ -224,12 +224,12 @@
 
     header figure {
       float: left;
-      width: 40px;
+      width: 35px;
       margin-right: 10px;
     }
 
     .client figure img {
-      height: 40px;
+      height: 35px;
     }
 
     header .company-info {
@@ -314,6 +314,10 @@
       border-collapse: separate;
       border-spacing: 5px 5px;
       overflow: hidden;
+    }
+
+    body section div.container{
+      margin-bottom: 10px;
     }
     section #meses{
       border-spacing: .5px 5px;
@@ -442,7 +446,7 @@
 
     section table.grand-total tbody td {
       padding: 0 10px 10px;
-      background-color: #25c16eab;
+      background-color: #34c276ab;
       color: #ffffff;
       font-weight: 400;
       text-align: right;

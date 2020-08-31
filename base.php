@@ -40,7 +40,7 @@
 
       <div class="data right">
         <br>
-        <div class="title">Nomre cliente</div>
+        <div class="title">Nombre cliente</div>
         <div class="date">
           <p>Fecha contrato: 01/06/2020</p>
           <p>Vigencia de contrato</p>
@@ -107,9 +107,9 @@
                   <td class="desc">(-)Renta extraordinaria</td>
                   <td class="total">$1,800.00</td>
                 </tr>
-                <tr>
+                <tr>25c16eab
                   <td class="no">-</td>
-                  <td class="desc">Monto Total Financiero</td>
+                  <td class="desc" style="background-color: rgba(70, 194, 128, 0.425);" >Monto Total Financiero</td>
                   <td class="total">$1,800.00</td>
                 </tr>
               </tbody>
@@ -160,7 +160,7 @@
               </tr>
               <tr>
                 <td class="no">-</td>
-                <td class="desc">Sub total pago inicial</td>
+                <td class="desc" >Sub total pago inicial</td>
                 <td class="total">$800.00</td>
               </tr>
               <tr>
@@ -170,7 +170,7 @@
               </tr>
               <tr>
                 <td class="no">-</td>
-                <td class="desc">Total Pago Inicial</td>
+                <td class="desc" style="background-color: rgba(70, 194, 128, 0.425);">Total Pago Inicial</td>
                 <td class="total">$800.00</td>
               </tr>
             </tbody>
@@ -211,7 +211,7 @@
                 </tr>
                 <tr>
                   <td class="no">-</td>
-                  <td class="desc">Total pago Mensual</td>
+                  <td class="desc" style="background-color: rgba(70, 194, 128, 0.425);">Total pago Mensual</td>
                   <td class="total">$800.00</td>
                 </tr>
               </tbody>
