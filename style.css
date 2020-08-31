@@ -327,9 +327,8 @@ grid-area: XLVIII;
 }
 .menu{
   
-  position:fixed;
-  z-index:3;
-  top:0;
+ /*  position:fixed; */
+/* pdf */  top:0;
   left:100vw;
   bottom:0;
   width:100vw;
@@ -367,12 +366,6 @@ grid-area: XLVIII;
 
 /* 
 datos end */
-.create-pdf{
-  grid-row: 1;
-  grid-column:1/2 ;
-}
-
-
 
 .footer{
   display: flex;
