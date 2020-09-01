@@ -228,7 +228,7 @@ grid-area: footer;
   height: 100%;
   width: 100%;
   grid-column: 3/5;
-  grid-row-end: 6;
+  grid-row-end: 5;
 }
 
 .conteiner_datos-tres{
