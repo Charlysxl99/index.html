@@ -4,9 +4,9 @@
 require_once __DIR__ . '../vendor/autoload.php';
 
 /* require_once('documento.php'); */
-require_once('contrato-print.php');
+/* require_once('contrato-print.php'); */
 
-//Grabs variables
+
 
 /* $plantilla = getPlantilla(); */
 $css = file_get_contents('style-imprimir.css');
@@ -14,6 +14,12 @@ $html = file_get_contents('base.php');
 $header = file_get_contents('header-print.html');
 $footer = file_get_contents('footer-print.html');
 
+//Grabs variables
+
+$pname = $_POST['promotor'];
+$cname = $_POST['cname'];
+
+//
 
 $mpdf = new \Mpdf\Mpdf(
   [
@@ -28,7 +34,10 @@ $mpdf = new \Mpdf\Mpdf(
 );
 
 $mpdf->SetFooter( $footer, $side = 'right');
-$mpdf->WriteHTML($html);/* 
+$mpdf->WriteHTML($html);
+
+$mpdf->AddPageByArray($pname);
+/* 
 $mpdf->AddPageByArray($contrato,[ "margin_top" =>"50px"]); */
 
 /*   "format" => "A4",

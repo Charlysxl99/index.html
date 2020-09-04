@@ -1,3 +1,8 @@
+<?php
+$cname = 'nombreTTT';
+$pname = 'promotorDL';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -24,15 +29,15 @@
       <div class="client left">
         <div class="container">
           <figure>
-            <img class="logo" src="img\logo_udc_saltillo.png" alt="" data-no-retina="">
+            <img class="logo" src="img\logo_udc_saltillo.png" alt="icono union credito" data-no-retina="">
           </figure>
         </div>
         <!--         hola -->
-        <p>Promotor:</p>
+        <p>Promotor:  <?php echo $pname;  ?> </p>
         <p class="name"> </p>
         <p>
-          796 Silver Harbour,<br>
-          TX 79273, US
+          796 Silver Harbour
+        
         </p>
 
         <br>
@@ -40,7 +45,8 @@
 
       <div class="data right">
         <br>
-        <div class="title">Nombre cliente</div>
+        <div class="title">
+          <p>Cliente: <?php echo $cname; ?> </p></div>
         <div class="date">
           <p>Fecha contrato: 01/06/2020</p>
           <p>Vigencia de contrato</p>
