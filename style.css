@@ -102,6 +102,7 @@ label{  /* titulo */
   border: transparent;
   color: var(--blanco_color);
   border: transparent;
+  height: 45px;
   
 }
 input{  /* carjita */
