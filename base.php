@@ -217,6 +217,11 @@ $pname = 'promotorDL';
                 </tr>
                 <tr>
                   <td class="no">-</td>
+                  <td class="desc">IVA (Mensual)</td>
+                  <td class="total">$3,200.00</td>
+                </tr>
+                <tr>
+                  <td class="no">-</td>
                   <td class="desc" style="background-color: rgba(70, 194, 128, 0.425);">Total pago Mensual</td>
                   <td class="total">$800.00</td>
                 </tr>
@@ -233,7 +238,7 @@ $pname = 'promotorDL';
               <tr>
                 <th class="no"></th>
                 <th class="desc">
-                  <div>Valor Residual (sin IVA)</div>
+                  <div>Valor Residual</div>
                 </th>
                 <th class="total">
                   <div>Total</div>
