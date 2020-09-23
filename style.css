@@ -97,6 +97,9 @@ form .wrapper{
     background-color: var(--oscuro_color);
     border: none;
   }
+  /* input#resultado.form-control:disabled{
+    background-color: var(--oscuro_color);
+  } */
 label{  /* titulo */
   
   border: transparent;
@@ -376,3 +379,8 @@ datos end */
   justify-content: center;
 }
 
+@media print{
+  .conteiner_datos-dos{
+    background-color: white;
+  }
+}

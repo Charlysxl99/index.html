@@ -10,31 +10,39 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Union de credito</title>
-
+  <!-- firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <!-- end firestore -->
 </head>
 
-  <form action="dompdf.php" method="POST">
+  <form action="#" method="POST">
 
     <div class="conteiner">
       <!-- contenedor todo -->
-
       <div class="item header">
         <nav>
           <ol>
             <div class="logo-conteiner">
               <img src="img\logo_udc_saltillo.png" alt="" data-no-retina="">
-
             </div>
-           <!--  <li>Cotizador Master PROCAAR </li> -->
             <div class="form_conteiner">
-
-              <div class="wrapper form-group"><label for="text">Promotor:</label><input class="form-control" type="text" id="text" name="promotor" placeholder="Nombre">
+              <div class="wrapper form-group">
+                <label for="text">Promotor:
+                </label>
+                <input class="form-control" type="text" id="text" name="promotor" placeholder="Promotor">
               </div>
-
-              <!-- <form class="example"> -->
-                <div class="wrapper form-group"><label for="text">Nombre del Cliente </label><input class="form-control" type="text" id="text" name="cname">
+                <div class="wrapper form-group">
+                  <label for="text">Nombre del Cliente
+                  </label>
+                  <input class="form-control" type="text" id="text" name="cname" placeholder="Nombre del cliente">
                 </div>
-              <!-- </form> -->
+            </div>
+            <div class="form-group">
+              <label for="calendario">
+                <span>calendario</span>
+                <input type="datetime-local" id="calendario" name="calendario" class="form-control">
+              </label>
             </div>
           </ol>
         </nav>
@@ -47,53 +55,60 @@
         <div class="conteiner_datos-uno">
           <div class="item_datos precio-v">
             <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Precio vehiculo:</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Precio vehiculo:
+                </label><input class="form-control" type="number" id="primero" value="0">
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos equipo-a">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">equipo alidado:</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">equipo alidado:
+                </label>
+                <input class="form-control" type="number" id="segundo" name="text-equipo" value="0">
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos renta-e">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Renta extaordinaria</label><select name="renta extraordinaria" class="form-control" type="text" id="text">
-                <option value="">Selecciona una opción</option>
-                <option value="diez">10%</option>
-                <option value="beinte">20%</option>
-                <option value="treinta">30%</option>
+              <div class="wrapper form-group">
+                <label for="text">Renta extaordinaria</label><select name="renta extraordinaria" class="form-control" type="number" id="mes">
+                <option value="0">Selecciona una opción</option>
+                <option value="10%">10%</option>
+                <option value="20%">20%</option>
+                <option value="30%">30%</option>
                 <option value="None">None</option>
               </select>
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos deposito-g">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Renta extraorinaria mensual</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Renta extraorinaria mensual
+                </label>
+                <input class="form-control" type="text" id="text">
               </div>
             <!-- </form> -->
           </div>
           <div class="item_datos total">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">TOTAL</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">TOTAL
+                </label>
+                <input disabled="disabled" class="form-control" type="number" id="resultado" name="resultado" value="0"  >
               </div>
-            <!-- </form> -->
           </div>
-        
           <div class="item_datos tasa-iva">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Tasa a calcular</label><select class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Tasa a calcular
+                </label>
+                <select class="form-control" type="text" id="text">
                 <option value="">Selecciona una opción</option>
                 <option value="">porcentaje eje</option>
                 <option value="">porcentaje eje</option>
                 </select>
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos plazo">
-            <div class="wrapper form-group"><label for="text">Plazo</label><select name="plazo"
+            <div class="wrapper form-group">
+              <label for="text">Plazo
+              </label>
+              <select name="plazo"
                 class="form-control" type="text" id="text">
                 <option value="">Selecciona una opción</option>
                 <option value="doce">12 meses</option>
@@ -104,84 +119,78 @@
             </div>
           </div>
           <div class="item_datos contado">
-            <div class="wrapper form-group"><label for="text">Tipo de seguro</label><select name="tseguro" class="form-control" type="text"
-                id="text">
+            <div class="wrapper form-group">
+              <label for="text">Tipo de seguro
+              </label>
+              <select name="tseguro"class="form-control"type="text"id="text">
                 <option value="">Selecciona una opción</option>
                 <option value="sicontado">Contado</option>
                 <option value="nocontado">Financiado</option>
-                
-                
               </select>
             </div>
           </div>
+              
         </div>
+    
         <div class="spacio">
           <p>Introducir datos para el calculo (valores iva incluido,excepto Anticipo)</p>
         </div>
-
         <div class="conteiner_datos-dos">
-
           <div class="item_datos acceso-g">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Valor Residual</label><select name="vresidual" class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Valor Residual
+                </label>
+                <select name="vresidual"class="form-control"type="text" id="text">
                 <option value="">Selecciona una opcion</option>
                 <option value="">15%</option>
                 <option value="">20%</option>
                 <option value="">25%</option>
                 </select>
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos meses-de">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Mes de facturación</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Mes de facturación
+                </label>
+                <input class="form-control" type="text" id="text">
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos tipo-vehiculo">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Tipo de vehiculo</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Tipo de vehiculo
+                </label>
+                <input class="form-control" type="text" id="text">
               </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos Unidades-R">
-            <!-- <form class="enviar"> -->
-              <div class="wrapper form-group"><label for="text">Unidades Requeridas</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Unidades Requeridas</label>
+                <input class="form-control" type="text" id="text">
               </div>
-            <!-- </form> -->
           </div>
         </div>
-
         <div class="spacio">
           <p>Introducir datos para el seguro y tipo de cambio</p>
         </div>
         <div class="conteiner_datos-tres">
           <div class="item_datos incluir iva_incluido">
-            <!-- <form class="example"> -->
-              <div class="wrapper form-group"><label for="text">Valor del seguro(primer año) IVA incluido</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Valor del seguro(primer año) IVA incluido
+                </label>
+                <input class="form-control" type="text" id="text">
           </div>
-            <!-- </form> -->
           </div>
           <div class="item_datos incluir aseguradora">
-            <!-- <form class="example"> -->
-              <div class="wrapper form-group"><label for="text">Nombre Aseguradora</label><input class="form-control" type="text" id="text">
+              <div class="wrapper form-group">
+                <label for="text">Nombre Aseguradora
+                </label>
+                <input class="form-control" type="text" id="text">
           </div>
-            <!-- </form> -->
           </div>
         </div>
-
-<!--         meses-de -->
-<!-- <div class="spacio">
-  <p>Condiciones de la operacion proporciona los resultados al plazo elegido</p>
-  <p>Aqui va ir la tabla de meses-de</p>
-</div> -->
-
-
-
         <div class="spacio">
           <p>Imprimir</p>
         </div>
-        
           <div class="conteiner_datos-tres button">
   
             <div class="wraper">
@@ -189,15 +198,11 @@
             </div>
 
             <div class="wraper">
-              <button type="submit" class="btn btn-primary btn-succes btn-lg btn-block" id="imprimir" name="imprimir">Imprimir</button>
+              <button type="button" class="btn btn-primary btn-succes btn-lg btn-block" id="imprimir" name="imprimir" onclick="window.print();">Imprimir</button>
             </div>
-                     
           </div>
-
       </div>
-      <!-- contenedor todo -->
     </div>
-    <!-- comienza footer-->
     <div class="spacio">
       <p>Footer</p>
     </div>
@@ -206,7 +211,6 @@
        Responsable de la UNE: Lic. José Armando Nava Dueñez - contacto@udcs.mx
        </p>
       <div>
-
         <p>
           Políticas de privacidad | Unión de Crédito Saltillo © 2020
        </p>
@@ -217,9 +221,11 @@
     </div>
     <!-- contenedor todo -->
   </form>
-  <?php
+<!--   <?php
   include("registro.php");
-  ?>
+  ?> -->
+  <script src="suma.js"></script>
+  <script src="dataBase.js"></script>
+  
 </body>
-
 </html>
