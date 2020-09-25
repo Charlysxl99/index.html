@@ -12,12 +12,12 @@ function sumar() {
   document.getElementById("resultado").value = parseInt(suma);
 }
 
-var botoncito = document.getElementById("guardar");
+/* var botoncito = document.getElementById("guardar"); */
 /* botoncito.addEventListener("click" ,sumar); */
 
-document.querySelector(botoncito).addEventListener('click', function (event) {
+/* document.querySelector(botoncito).addEventListener('click', function (event) {
   event.preventDefault();
-}); 
+});  */
 
 /* var vehiculo = document.getElementById("text-vehiculo");
 var equipo = document.getElementById("text-equipo");
