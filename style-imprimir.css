@@ -2,6 +2,7 @@
  :root {
    --maincolor:rgb(37, 193, 111);
    --textcolor:black;
+   
 }
 
 *{
@@ -104,9 +105,10 @@
       margin: 0;
       padding: 0;
       color: var(--textcolor);
-      
     }
-
+    p{
+      margin-bottom: 0 ;
+    }
     body a {
       text-decoration: none;
       color: inherit;
@@ -155,7 +157,7 @@
     }
 
     .client figure img {
-      height: 35px;
+      height: 100px;
     }
 
     header .company-info {
@@ -189,11 +191,13 @@
     }
     .text-one{
       color:black;
+      text-justify: center;
+      font-weight: 800;
     }
 /* tamaño de tablas ancho */
     section .details .client {
       width: 50%;
-      line-height: 10px;
+    /*   line-height: 10px; */
     }
 
 /*     section .details .client .name {
@@ -227,7 +231,38 @@
       height: 100%;
       z-index: -1;
     }
-
+    .descripcionAuto{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .table-grid{
+       display: grid;
+  width: 100vw;
+  height: 100%;
+  /* background-color: var(--negro_color); */
+  grid-template:
+   repeat(2,1fr)/ repeat(2,500px)
+   ;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 15px 0 30px 0;
+    grid-template-areas: 
+    " leftOne rightOne "
+    " leftTwo rightTwo"
+    ;
+  }
+    #left{
+     grid-area: leftOne;
+    }
+    #right{
+      grid-area: rightOne;
+    }
+    #leftTwo{
+      grid-area: leftTwo;
+    }
+    #rightTwo{
+      grid-area: rightTwo;
+    }
     section .no-break {
       page-break-inside: avoid;
     }
@@ -482,7 +517,12 @@
       text-align: center;
     }
  
-
+@media print{
+  :root{
+    
+    --oscuro_color:rgb(255, 255, 255);
+  }
+}
 
 
 

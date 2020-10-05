@@ -209,12 +209,12 @@ grid-area: modelo;
   gap: 25px;
   padding: 15px 0 30px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "año modelo marca extra1"
-    "main main . sidebar"
-    "footer footer subTotal total";
+    " . año modelo marca extra1 ."
+    " . main main . sidebar . "
+    " . footer footer subTotal total .";
 
   /* grid-template:
    repeat(1,5rem)/ repeat(4,200px);*/
@@ -398,10 +398,16 @@ datos end */
 }
 
 @media print{
+   :root{
+    
+    --oscuro_color:rgb(255, 255, 255);
+  }
   .conteiner_datos-uno{
     background-color: blue;
   }
   form{
     display: none;
   }
+
 }
+
